@@ -35,29 +35,38 @@ bool solution(const char *string, const char *ending)
 {
     int con1 = 0, con2 = 0, con3 = 0, temp = 0;
     
+    
     if (*ending == '\0')
-        {
-            return true;
-        }
+      {
+        return true;
+      }
     else
-        {
+      {
       
-            for (con1 = 0; string[con1] != '\0'; con1++)
-                ;
+        for (con1 = 0; string[con1] != '\0'; con1++)
+             ;
         
-            for (con2 = 0; ending[con2] != '\0'; con2++)
-                ;    
-            temp = con2; 
-            for (con2; con2 > 0; con2--, con1--)
-                {
-                    if (string[con1 - 1] == ending[con2 - 1])
-                        con3++;
-            
-                }
-            if (temp == con3)
-                return true;
-            else
+        for (con2 = 0; ending[con2] != '\0'; con2++)
+             ;    
+        temp = con2;
+        
+        if (con2 > con1)
+            {
                 return false;
+            }
+        else
+            {
+                for (con2; con2 > 0; con2--, con1--)
+                    {
+                        if (string[con1 - 1] == ending[con2 - 1])
+                            con3++;
+            
+                    }
+                if (temp == con3)
+                        return true;
+                else
+                        return false;
+            
+            }
         }
 }
-
