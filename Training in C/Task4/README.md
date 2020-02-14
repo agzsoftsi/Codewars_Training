@@ -17,6 +17,6 @@ followed by a new line
 
 Examples:
 
-Last digit of 629438752 is 2 and is less than 6 and not 0
-Last digit of 491506926 is 6 and is greater than 5
-Last digit of 809065140 is 0 and is 0
+- Last digit of 629438752 is 2 and is less than 6 and not 0
+- Last digit of 491506926 is 6 and is greater than 5
+- Last digit of 809065140 is 0 and is 0
