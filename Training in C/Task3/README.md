@@ -15,7 +15,7 @@ followed by a new line
 
 Examples:
 
--520693284 is negative
--973398895 is negative
-561319348 is positive
-0 is zero
+- -520693284 is negative
+- -973398895 is negative
+- 561319348 is positive
+- 0 is zero
